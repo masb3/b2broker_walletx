@@ -1,9 +1,11 @@
-import pytest
 from decimal import Decimal
+
+import pytest
 from django.urls import reverse
 from rest_framework import status
 from rest_framework.test import APIClient
-from walletx_api.models import Wallet, Transaction
+
+from walletx_api.models import Transaction, Wallet
 
 
 @pytest.fixture

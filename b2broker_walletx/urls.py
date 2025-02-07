@@ -1,7 +1,7 @@
-from django.urls import path, include
+from django.urls import include, path
 from rest_framework.routers import DefaultRouter
 
-from walletx_api.views import WalletViewSet, TransactionViewSet
+from walletx_api.views import TransactionViewSet, WalletViewSet
 
 router = DefaultRouter()
 router.register(r"wallets", WalletViewSet)

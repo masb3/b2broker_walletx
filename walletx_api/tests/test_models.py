@@ -1,9 +1,9 @@
-import pytest
 from decimal import Decimal
 
+import pytest
 from django.db import IntegrityError
 
-from walletx_api.models import Wallet, Transaction
+from walletx_api.models import Transaction, Wallet
 
 
 @pytest.fixture

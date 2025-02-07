@@ -2,8 +2,8 @@ import uuid
 from decimal import Decimal
 
 from django.core.validators import MinValueValidator
-from django.db import models, transaction, IntegrityError
-from django.db.models import Q, F
+from django.db import IntegrityError, models, transaction
+from django.db.models import F, Q
 
 from walletx_api.querysets import TransactionManager
 
